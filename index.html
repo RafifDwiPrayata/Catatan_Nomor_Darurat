@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor Darurat Umum</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 2em;
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .emergency-contacts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .contact-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-card:hover {
+            transform: scale(1.05);
+            background-color: rgb(231, 231, 231);
+        }
+
+        .contact-card img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h2 {
+            font-size: 1.8em;
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            font-size: 1.3em;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin-top: 20px;
+        }
+
+        .indexbutton-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .indexbutton {
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .indexbutton:hover {
+            background-color: #cc4f39;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kontak Darurat Indonesia</h1>
+        <p>Siap melayani Anda dalam situasi darurat</p>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Layanan Penting</h2>
+            <p>Berikut adalah daftar kontak darurat yang tersedia di Indonesia. Simpan atau gunakan kontak ini dalam
+                keadaan darurat.</p>
+        </section>
+
+        <section class="emergency-contacts">
+            <div class="contact-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lambang_Polri.png" alt="Polisi">
+                <h2>Polisi</h2>
+                <p>Nomor: <strong>110</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://pentasada.co.id/wp-content/uploads/2020/07/APV-1.jpg" alt="Ambulans">
+                <h2>Ambulans</h2>
+                <p>Nomor: <strong>118</strong> / <strong>119</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://i0.wp.com/satpolpp.ngawikab.go.id/wp-content/uploads/2023/09/cropped-LOGO-PEMADAM-KEBAKARAN.png?ssl=1"
+                    alt="Pemadam Kebakaran">
+                <h2>Pemadam Kebakaran</h2>
+                <p>Nomor: <strong>113</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/5a/Logo_Basarnas.png/2048px-Logo_Basarnas.png"
+                    alt="Basarnas (SAR)">
+                <h2>Basarnas (SAR)</h2>
+                <p>Nomor: <strong>115</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://design.deviloarts.com/wp-content/uploads/2021/09/PLN-Logo-Perusahaan-Listrik-Negara.png"
+                    alt="PLN">
+                <h2>PLN (Listrik)</h2>
+                <p>Nomor: <strong>123</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://jasalogocepat.com/wp-content/uploads/2023/08/download-logo-jasa-marga-png-jasalogocepatcom.png"
+                    alt="Jasa Marga">
+                <h2>Jasa Marga</h2>
+                <p>Nomor: <strong>14080</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/BMG_2003.png" alt="BMKG">
+                <h2>BMKG <br> (Informasi Cuaca dan Gempa)</h2>
+                <p>Nomor: <strong>196</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://bakesbangpol.cimahikota.go.id/themes/diskominfoarpus/assets/img/logo/bidang_kewaspadaan.jpeg"
+                    alt="Posko Kewaspadaan Nasional">
+                <h2>Posko Kewaspadaan Nasional</h2>
+                <p>Nomor: <strong>122</strong></p>
+            </div>
+            <div class="contact-card">
+                <img src="https://storage.kasn.go.id/website-kasn/post_image/eee155d9-98db-4a35-9fe2-296d66dbbba6/BPOM_480.png"
+                    alt="BPOM">
+                <h2>Sentra Informasi Keracunan BPOM</h2>
+                <p>Nomor: <strong>1500 - 533</strong></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="indexbutton-container">
+                <a class="indexbutton" href="personal.php">Lihat Kontak Darurat Pribadi</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kontak Darurat Indonesia. Semua hak dilindungi.</p>
+    </footer>
+</body>
+
+</html>
